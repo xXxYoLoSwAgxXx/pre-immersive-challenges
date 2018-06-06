@@ -1,11 +1,9 @@
 module.exports = function descendingOrder(number) {
-  var str = number.toString();
-  console.log(str);
-  for (let i = 0; i < str.length; i++) {
-    if (typeof number === 'number' === false){
-      console.log('not a number!');
+    if (typeof(number) === 'number'){
+        var arr = Array.from(number.toString()).map(Number);
+        //console.log(arr);
+        return arr.sort().reverse().join('');
     } else {
-      console.log(str.split("").sort("").reverse("").join(""));
+        return 'not a number!';
+    }
   }
-}
-
