@@ -1,5 +1,5 @@
 module.exports = function evenLadderPattern(num) {
-  if (num < 1){
+  if (num <= 1){
     return "";
   } else {
     let arr = [];
